@@ -1,0 +1,23 @@
+body {
+    background-image: url(img/aldebaran-s-uXchDIKs4qI-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+.tittle{
+    font-size: 50px;
+    font-weight: 700;
+    color: aliceblue;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    color: aliceblue;
+}
+
+.img-logo img {
+    width: 90px;
+    height: 100px;
+}
