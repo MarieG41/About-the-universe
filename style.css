@@ -7,17 +7,150 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: aliceblue;
+    text-align: center;
+    padding: 15px;
 }
-nav {
+.nav-div {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
-
-main{
+.navigation {
+    text-align: center;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    padding: 30px;
+    width: 800px;
     color: aliceblue;
 }
-
+.navigation a{
+    margin-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 700;
+}
+.navigation a:hover {
+    color: darkviolet;
+}
+.discover{
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.discover:hover {
+    color: deeppink;
+    border-color: deeppink;
+}
 .img-logo img {
     width: 90px;
     height: 100px;
+    padding: 15px;
+}
+.star-wars-sides i {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.categories {
+    position: fixed;
+}
+main{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+.chiffres-space {
+    margin-top: 30px;
+    border: 2px solid aliceblue;
+    border-radius: 30px;
+    padding: 30px;
+    width: 800px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.chiffres-space h2 {
+    font-size: 17px;
+}
+.chiffres-space p {
+    font-size: 22px;
+    font-weight: 700;
+}
+.chiffres-space i {
+    padding-right: 10px;
+    font-size: 30px;
+}
+.space-content {
+    display: flex;
+}
+.number {
+    font-size: 30px;
+    font-weight: 700;
+    color: aliceblue;
+    padding: 15px;
+}
+.vivant {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.alive-people {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+.vaisseaux {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.space-ships {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+.planetes {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.planet-info {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+.mission {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.mission-info {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+.btn-next-mission {
+    margin-top: 20px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.btn-next-mission:hover {
+    border-color: deeppink;
+    color: deeppink;
 }
