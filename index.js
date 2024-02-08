@@ -2,6 +2,8 @@ let alive = document.querySelector('.alive');
 let starships = document.querySelector('.starships');
 let planets = document.querySelector('.planets');
 
+initFunc();
+
 function initFunc() {
     aliveNb();
     ships();
@@ -38,6 +40,4 @@ function planetNB() {
             planets.textContent = planet;
         })
 }
-
-initFunc();
 

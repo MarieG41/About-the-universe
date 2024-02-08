@@ -170,7 +170,7 @@ main{
     border-radius: 30px;
     margin: 20px 30px 30px 0;
     padding: 30px;
-    height: 400px;
+    height: 420px;
 }
 .planet-filter {
     display: flex;
@@ -213,12 +213,15 @@ main{
     border: 2px solid aliceblue;
     border-radius: 10px;
 }
-table {
-    margin-top: 10px;
-    width: 600px;
+.planet-list {
+    margin: 10px 0;
+    padding: 5px;
+    max-height: 300px;
+    overflow-y: scroll;
 }
-th {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid aliceblue;
+.planet-list li:hover{
+    color: rgb(55, 6, 101);
+}
+.planet-result {
+    margin-top: 10px;
 }
