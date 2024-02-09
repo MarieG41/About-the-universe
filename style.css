@@ -219,9 +219,25 @@ main{
     max-height: 300px;
     overflow-y: scroll;
 }
-.planet-list li:hover{
+.planet-list li:hover {
     color: rgb(55, 6, 101);
 }
 .planet-result {
     margin-top: 10px;
+}
+.info-list {
+    border: 2px solid aliceblue;
+    width: 450px;
+    border-radius: 30px;
+    margin: 20px 30px 30px 0;
+    padding: 30px;
+    height: 420px;
+}
+.info-content h1 {
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+.info-content p{
+    padding: 10px 0 0 0;
 }
