@@ -18,10 +18,10 @@ function planetsDisplay(planetes) {
         const starPlanets = document.querySelector('.planet-list');
         const items = document.createElement('li');
         items.textContent = planete.name;
-        starPlanets.appendChild(items);
         items.addEventListener('click', function (event) {
             displayPlanetInfos(planetsAll, event);
         });
+        starPlanets.appendChild(items);
     });
     planetResults = document.querySelector('.planet-result').textContent = `${planetsAll.length} : résultats`;
 }
@@ -32,24 +32,17 @@ function displayPlanetInfos(planetsAll, event) {
     const planet = planetsAll.find(planet => planetName == planet.name);
     //console.log(planet);
     document.querySelector('.planet-name').textContent = planet.name; 
-
     populationInfo = document.querySelector('.population').textContent = `Population : ${planet.population}`;
-
     gravityInfo = document.querySelector('.gravity').textContent = `Gravité : ${planet.gravity}`;
-
     diameterInfo = document.querySelector('.diameter').textContent = `Diamètre : ${planet.diameter}`;
-
     diameterInfo = document.querySelector('.climate').textContent = `Climat : ${planet.climate}`;
-
     diameterInfo = document.querySelector('.terrain').textContent = `Terrain: ${planet.terrain}`;
-
 }
 
 const planetSelect = document.querySelector('#planet-wars');
 planetSelect.addEventListener('change', function() {
     const filter = this.value;
-    filterValue(filter)
-    console.log(planetSelect);
+    filterValue(filter);;
 })
 
 function filterValue(value) {
@@ -57,9 +50,9 @@ function filterValue(value) {
         const populationPlanet = parseInt(planet.population, 10);
         switch(value) {
             case "0-100.000":
-                return populationPlanet > 0 & populationPlanet <= 100000;
-            case "0-100m":
-                return populationPlanet > 0 & populationPlanet <= 100000000;
+                return populationPlanet > 0 && populationPlanet <= 100000;
+            case "100-100m":
+                return populationPlanet > 100000 && populationPlanet <= 100000000;
             case "+100m":
                 return populationPlanet > 100000000;
             default:
@@ -68,10 +61,3 @@ function filterValue(value) {
     });
     planetsDisplay(planetFilter);
 }
-// function getCountPage() {
-//     const countPages = reponse.next;
-//     const countPlanets = planetsAll; 
-//     planetName(countPlanets / countPages);
-//     //planetsDisplay(planetsAll); 
-// }
-// //getCountPage()

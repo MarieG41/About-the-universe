@@ -44,8 +44,9 @@ body {
     margin-top: 20px;
 }
 .discover:hover {
-    color: deeppink;
-    border-color: deeppink;
+    background-color: rgba(255, 20, 145, 0.817);
+    border-color: rgba(255, 20, 145, 0.817);
+    transition: 0.5s;
 }
 .img-logo img {
     width: 90px;
@@ -156,8 +157,9 @@ main{
     font-weight: 700;
 }
 .btn-next-mission:hover {
-    border-color: deeppink;
-    color: deeppink;
+    border-color: rgba(255, 20, 145, 0.815);
+    background-color: rgba(255, 20, 145, 0.815);
+    transition: 0.5s;
 }
 .planet-main {
     display: flex;
