@@ -10,11 +10,12 @@ function planetName() { //fonction qui récupère le nom des planètes grâce à
                     planetsAll = planetsAll.concat(reponse.results);//planetsAll récupère les résultats de l'API sur les planètes et ses informations
                     planetsDisplay(reponse.results); //la fonction qui affiche les planètes à l'écran prend comme paramètre les résultats de l'API.
                 }) 
-    }
+        }
 }
 
-function planetsDisplay(planetes) {//cette fonction affiche les planètes avec le paramètre planetes
-    planetes.forEach((planete) => {//le paramètre planetes est décortiqué avec une boucle forEach afin de n'obtenir que les données de chaque planète individuellement
+function planetsDisplay(filteredPlanets) {//cette fonction affiche les planètes avec le paramètre planetes
+     const displayPlanets = filteredPlanets.length > 0 ? filteredPlanets : planetsAll;
+    displayPlanets.forEach((planete) => {//le paramètre planetes est décortiqué avec une boucle forEach afin de n'obtenir que les données de chaque planète individuellement
         const starPlanets = document.querySelector('.planet-list');//le <ul> dans le HTML qui reçoit le nom des planètes sur le site
         const items = document.createElement('li');//la création d'un <li> pour le nom de chaque planète
         items.textContent = planete.name;//affiche le nom des planètes dans les <li> créés
